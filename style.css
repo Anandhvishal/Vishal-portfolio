@@ -1,0 +1,615 @@
+/*only for profile page*/
+
+#about {
+  background-color: #000000;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+/* Round profile picture with shadow and hover effect */
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #881212;
+  box-shadow: 0 4px 8px #ff007f;
+  transition: transform 0.3s ease, box-shadow 0.9s ease;
+  border-color: #ff007f;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0)(255, 255, 255, 0.2);
+}
+
+/* Styling for the text */
+.profile-container p {
+  font-size: 18px;
+  color: #070707;
+  margin-top: 15px;
+}
+
+.profile-container p strong {
+  color: #636262;
+  
+}
+
+/* Optional button to link to projects or more info */
+.click {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff007f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.click:hover {
+  background-color: #000000;
+}
+
+/* Keyframe animation for section (fading in on scroll) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------*/
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  color: #003366;
+}
+
+header {
+  background-color: rgb(2, 2, 2);
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+.hello{
+  color: #ff007f;
+}
+
+.work{
+  color: #5a5656;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.habout
+{
+  color: black;
+}
+
+p, ul {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+}
+nav ul li a:hover{
+color: #ff007f;
+}
+
+
+.common-background {
+  background-color:#5a5656;
+  padding: 50px 20px;
+  text-align: center;
+  color: #030303;
+}
+#skills{
+  background-color: #000000;
+}
+
+
+
+.common-background {
+  position: relative; /* Establish a positioning context */
+  padding: 50px; /* Add some padding for content spacing */
+  color: #f7f5f5; /* Text color */
+  text-shadow:2px; /* Optional: shadow for text readability */
+  margin-bottom: 20px; /* Space between sections */
+  overflow: hidden; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+  color: #ff007f;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#education{
+  background-color:rgba(233, 226, 226, 0.815);
+  padding: 50px 20px;
+  text-align: center;
+  color: #030303;
+  font-size: medium;
+}
+
+#education{
+  position: relative; /* Establish a positioning context */
+  padding: 50px; /* Add some padding for content spacing */
+  color: #615959; /* Text color */
+  text-shadow:2px; /* Optional: shadow for text readability */
+  margin-bottom: 20px; /* Space between sections */
+  overflow: hidden; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.h2{
+  color: #ff007f;
+  font-size: 2em;
+}
+
+
+
+
+.common-background::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  bottom: 0; /* Align it to the bottom */
+  background-image: url('./image/background.avif'); /* Background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  opacity: 0.5; /* Set the opacity for transparency */
+  z-index: 1; /* Send this behind the text */
+  
+}
+
+.common-background h2, .common-background p {
+  position: relative; /* Keep text above the background */
+  z-index: 2; /* Ensure text is above the background */
+}
+
+.common-background h2 {
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.common-background p {
+  font-size: 18px; /* Font size for paragraph text */
+}
+
+/* Media Query for Tablet Devices */
+@media (max-width: 1024px) {
+  .common-background::before {
+      background-image: url('./image/url.jpeg'); /* Background for tablet devices */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) and (min-width:769px) {
+  .common-background::before {
+      background-image: url('./image/url.jpeg'); /* Background for mobile devices */
+  }
+}
+
+
+
+
+
+.profile-container {
+  margin: 20px auto;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+}
+
+h2 {
+  color:#ff007f;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+#projects {
+background-color: #030303;
+color:#615959;
+text-align: center;
+font-family:'Times New Roman', Times, serif; 
+}
+
+.proHeading {
+  background-color: #000000;
+  color:#ff007f;
+  text-align: center;
+ }
+
+ #workout{
+  color: #000000;
+  padding: 1%;
+  font-size: 1.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .div{
+  background-color:rgba(233, 226, 226, 0.815);
+ }
+
+
+ #hobbies{
+  text-align: center;
+  color: #615959;
+  background-color:rgba(233, 226, 226, 0.815) ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .up{
+  list-style-type: square;
+  padding: 10px;
+ }
+
+ #play{
+  padding: 3px;
+  text-decoration: solid;
+ }
+
+
+.project {
+  margin: 20px 0;
+}
+
+.project h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.project p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+
+#vidio{
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 1%;
+}
+
+#call{
+  color: #615959;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+button.view-project {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.view-project:hover {
+  background-color: #333;
+}
+
+#contact 
+{
+  background-color: #000000;
+  color:#30a4da;
+  text-align: center;
+ }
+.contact
+{
+  color: whitesmoke;
+}   
+
+.contact{
+  color: #ff007f;
+}
+
+#address{
+  color: #5a5656;
+}
+
+#email-form {
+  padding: 40px;
+  background-color: #000000; /* Light background color */
+  max-width: 600px; /* Max width for the form container */
+  margin: 0 auto; /* Center the form horizontally */
+  border-radius: 8px;
+  color: #615959;
+   
+}
+#hear{
+  color: #ffffff;
+  padding-top: 1%;
+}
+
+#connect{
+  color: #585555;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+
+
+ 
+
+
+/* Style the form elements */
+form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Evenly space out all form elements */
+}
+
+ label {
+  margin-bottom: 10px; /* Space between label and input */
+   font-weight: bold;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}  
+
+/* input, textarea {
+  padding: 10px;
+  border: 1px solid #f7f8f8;
+  border-radius: 4px; 
+  font-size: 16px;
+  width: 100%; 
+  box-sizing: border-box; 
+  display: block; 
+  margin-bottom: 20px;
+  border-bottom: solid white;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+} */
+
+/* Style the textarea (message field) */
+textarea {
+  height: 150px; /* Adjust height as needed */
+  resize: vertical; /* Allow resizing of textarea only vertically */
+}
+
+/* Style the submit button */
+button {
+  padding: 12px;
+  background-color: #ff007f; /* Blue background */
+  color: rgb(253, 248, 248);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+  border-radius: 10px;
+  
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #000000;
+  padding: 20px 0;
+  color: #ff007f;
+  text-align: center;
+}
+
+footer .footer-content h3 {
+  margin:10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer .footer-content {
+  margin: 10px 0 20px;
+  font-size: 14px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+footer .social-icons a {
+  color: whitesmoke;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #ff007f;
+}
+
+footer .social-icons a:nth-child(1):hover {
+  color: #ff007f;;
+}
+/* Style for the scroll-to-top button */
+#scrollBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff007f;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+
+
+/* Content to create scrolling effect */
+.content {
+  height: 1500px; /* Example height to enable scrolling */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  nav ul {
+      padding: 0;
+      text-align: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  section {
+      padding: 30px 10px;
+  }
+
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+
+  ul li {
+      font-size: 1.1em;
+  }
+
+  .project h3 {
+      font-size: 1.6em;
+  }
+
+  button.view-project {
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.8em;
+  }
+
+  .profile-pic {
+      width: 100px;
+      height: 100px;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  .project h3 {
+      font-size: 1.4em;
+  }
+
+  button.view-project {
+      padding: 6px 12px;
+  }
+}
+
+
+.hello{
+  background-color: #000000;
+}
+
+ul li a{
+  color: black;
+}
+
+
+
+
+
+input,textarea{
+  background:transparent;
+  border: none;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+  border-bottom: solid #615959;
+  color:#615959;
+  outline: none;
+  }
+
+  
+  
+
+
+
+
+
+
+
